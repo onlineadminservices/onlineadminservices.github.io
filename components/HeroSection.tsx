@@ -12,13 +12,19 @@ export default function HeroSection() {
       
       <div className="relative container mx-auto px-4 py-24 md:py-32">
         <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-            Bienvenido a <span className="text-yellow-400">Nuestra Tienda</span>
+          {/* Título principal: BAZIMART en mayúsculas y azul noche */}
+          <h1 className="text-5xl md:text-7xl font-bold mb-4 tracking-wider">
+            <span className="text-[#0a1a3a]">BAZIMART</span>
           </h1>
           
-          <p className="text-xl md:text-2xl mb-8 opacity-90">
-            Descubre nuestra exclusiva colección de productos para el hogar y la cocina.
-            <span className="block text-lg mt-2 text-blue-200">
+          {/* Subtítulo (opcional, puedes cambiarlo si quieres) */}
+          <p className="text-xl md:text-2xl mb-6 opacity-90">
+            Calidad y estilo para tu hogar y cocina
+          </p>
+          
+          <p className="text-lg mb-8 opacity-80">
+            Descubre nuestra exclusiva colección de productos.
+            <span className="block text-md mt-2 text-blue-200">
               🛍️ <strong>Versión DEMO</strong> - Datos de muestra
             </span>
           </p>
