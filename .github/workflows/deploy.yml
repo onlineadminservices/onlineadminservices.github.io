@@ -28,6 +28,9 @@ jobs:
       - name: Build static site
         run: npm run build
 
+      - name: Copy CNAME file to output folder
+        run: cp CNAME out/ || echo "CNAME file not found, skipping"
+
       - name: Deploy to gh-pages branch
         uses: peaceiris/actions-gh-pages@v3
         with:
