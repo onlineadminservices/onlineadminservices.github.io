@@ -16,11 +16,7 @@ export default function ProductGrid({ category, subcategory, limit }: ProductGri
   if (limit) products = products.slice(0, limit);
 
   if (products.length === 0) {
-    return (
-      <div className="text-center py-12 text-gray-500">
-        No hay productos disponibles.
-      </div>
-    );
+    return <div className="text-center py-12 text-gray-500">No hay productos disponibles.</div>;
   }
 
   return (
