@@ -2,6 +2,7 @@ import './globals.css'
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import Footer from '@/components/Footer'
+import CookieBanner from '@/components/CookieBanner'
 
 export const metadata: Metadata = {
   title: 'BAZIMART | Hogar y Cocina',
@@ -39,6 +40,9 @@ export default function RootLayout({
 
         {/* Footer */}
         <Footer />
+
+        {/* Cookie consent banner (GDPR) */}
+        <CookieBanner />
       </body>
     </html>
   )
