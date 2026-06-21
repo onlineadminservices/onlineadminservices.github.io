@@ -39,8 +39,8 @@ export default function LegalPage() {
             <tr className="border-b border-gray-100">
               <td className="py-2 pr-6 font-medium text-gray-700">Correo electrónico</td>
               <td className="py-2">
-                <a href="mailto:fapicella@hotmail.com" className="text-gray-800 hover:underline">
-                  fapicella@hotmail.com
+                <a href="mailto:info@bazimart.com" className="text-gray-800 hover:underline">
+                  info@bazimart.com
                 </a>
               </td>
             </tr>
