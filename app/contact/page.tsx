@@ -11,8 +11,8 @@ export default function ContactPage() {
           <div className="space-y-4 text-sm text-gray-600">
             <div>
               <p className="font-medium text-gray-700">Email</p>
-              <a href="mailto:fapicella@hotmail.com" className="hover:text-gray-900 transition">
-                fapicella@hotmail.com
+              <a href="mailto:info@bazimart.com" className="hover:text-gray-900 transition">
+                info@bazimart.com
               </a>
             </div>
             <div>
@@ -42,7 +42,7 @@ export default function ContactPage() {
             Respondemos en un plazo máximo de 2 días hábiles.
           </p>
           <a
-            href="mailto:fapicella@hotmail.com?subject=Consulta%20BAZIMART"
+            href="mailto:info@bazimart.com?subject=Consulta%20BAZIMART"
             className="inline-block bg-gray-900 text-white text-sm px-6 py-3 hover:bg-gray-700 transition"
           >
             Enviar email
