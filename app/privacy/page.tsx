@@ -16,7 +16,7 @@ export default function PrivacyPage() {
           <strong>Fernando Martin Apicella</strong> — BAZIMART<br />
           Via dell&apos;Indipendenza 20 Int. 5, 40121 Bologna (BO), Italia<br />
           Partita IVA: IT 04234991208<br />
-          Correo de contacto: <a href="mailto:fapicella@hotmail.com" className="text-gray-800 hover:underline">fapicella@hotmail.com</a>
+          Correo de contacto: <a href="mailto:info@bazimart.com" className="text-gray-800 hover:underline">info@bazimart.com</a>
         </p>
       </section>
 
@@ -98,7 +98,7 @@ export default function PrivacyPage() {
         </ul>
         <p className="text-gray-600 text-sm leading-relaxed mt-3">
           Para ejercer estos derechos, contacte a{' '}
-          <a href="mailto:fapicella@hotmail.com" className="text-gray-800 hover:underline">fapicella@hotmail.com</a>.
+          <a href="mailto:info@bazimart.com" className="text-gray-800 hover:underline">info@bazimart.com</a>.
           También tiene derecho a presentar una reclamación ante el{' '}
           <a href="https://www.garanteprivacy.it" target="_blank" rel="noopener noreferrer" className="text-gray-800 hover:underline">
             Garante per la protezione dei dati personali
