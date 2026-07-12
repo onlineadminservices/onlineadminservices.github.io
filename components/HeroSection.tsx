@@ -4,12 +4,12 @@ export default function HeroSection() {
   return (
     <section className="relative bg-[#1A1A1A] overflow-hidden" style={{ minHeight: '88vh' }}>
 
-      {/* Imagen de fondo — opacidad baja para evitar texto fantasma */}
+      {/* Imagen de fondo — opacità bassissima per evitare il testo fantasma */}
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{
           backgroundImage: "url('/listing-preview/imagenes_finales/AP_modulo1_hero.png')",
-          opacity: 0.10,
+          opacity: 0.07,
         }}
       />
       {/* Gradient overlay */}
@@ -81,7 +81,7 @@ export default function HeroSection() {
           </div>
         </div>
 
-        {/* Immagine destra desktop — mask per dissolvere lo sfondo bianco */}
+        {/* Immagine destra desktop — mask radiale ampio per dissolvere lo sfondo bianco */}
         <div className="hidden lg:flex flex-1 items-center justify-end py-16">
           <img
             src="/listing-preview/imagenes_finales/01_main.png"
@@ -90,8 +90,8 @@ export default function HeroSection() {
             style={{
               maxHeight: '74vh',
               filter: 'drop-shadow(0 40px 80px rgba(0,0,0,0.95))',
-              WebkitMaskImage: 'radial-gradient(ellipse 76% 80% at 54% 48%, black 38%, transparent 80%)',
-              maskImage: 'radial-gradient(ellipse 76% 80% at 54% 48%, black 38%, transparent 80%)',
+              WebkitMaskImage: 'radial-gradient(ellipse 90% 88% at 54% 48%, black 55%, transparent 95%)',
+              maskImage: 'radial-gradient(ellipse 90% 88% at 54% 48%, black 55%, transparent 95%)',
             }}
           />
         </div>
