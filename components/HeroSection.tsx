@@ -36,8 +36,7 @@ export default function HeroSection() {
           </h1>
 
           <p className="text-[#A08870] text-base md:text-lg mb-10 md:mb-12 leading-relaxed font-light">
-            Perch&eacute; chi cucina con cura merita risposte precise,
-            non accessori generici.
+            Perch&eacute; chi cucina con cura merita risposte precise.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
