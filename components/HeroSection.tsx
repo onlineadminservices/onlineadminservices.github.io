@@ -23,7 +23,7 @@ export default function HeroSection() {
 
           <div className="flex items-center gap-3 mb-8 md:mb-10">
             <span className="block w-6 md:w-8 h-px bg-[#8B6E4F]"></span>
-            <span className="text-[#8B6E4F] text-xs tracking-[0.35em] uppercase font-medium">Piano a Induzione</span>
+            <span className="text-[#8B6E4F] text-xs tracking-[0.35em] uppercase font-medium">Per chi ama cucinare</span>
           </div>
 
           <h1
@@ -36,8 +36,8 @@ export default function HeroSection() {
           </h1>
 
           <p className="text-[#A08870] text-base md:text-lg mb-10 md:mb-12 leading-relaxed font-light">
-            9 pezzi studiati per lavorare insieme &mdash;
-            dal piano cottura alla tavola.
+            Perch&eacute; chi cucina con cura merita risposte precise,
+            non accessori generici.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
