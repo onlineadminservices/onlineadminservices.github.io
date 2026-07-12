@@ -9,6 +9,16 @@ export const metadata: Metadata = {
   description: 'Kit 9 pezzi per il piano cottura a induzione — 5 tappetini silicone, 2 pinze salva dita, 2 trivet honeycomb. Disponibile su Amazon.it.',
 }
 
+const logoStyle: React.CSSProperties = {
+  fontFamily: "'Montserrat', sans-serif",
+  fontWeight: 600,
+  letterSpacing: '0.1em',
+  fontSize: '1.05rem',
+  textTransform: 'uppercase',
+  color: '#1A1A1A',
+  textDecoration: 'none',
+};
+
 export default function RootLayout({
   children,
 }: {
@@ -21,11 +31,7 @@ export default function RootLayout({
         <header className="sticky top-0 z-50 bg-[#F8F4EE]/95 backdrop-blur-md border-b border-[#E8DDD0]">
           <div className="container mx-auto px-6 py-4 flex justify-between items-center">
             {/* Logo — Montserrat SemiBold, tracking +100, uppercase */}
-            <Link
-              href="/"
-              className="logo-bazimart text-[#1A1A1A] hover:text-[#8B6E4F] transition-colors"
-              style={{ fontSize: '1.05rem' }}
-            >
+            <Link href="/" style={logoStyle} className="hover:text-[#8B6E4F] transition-colors">
               BAZIMART
             </Link>
             <nav className="hidden md:flex items-center gap-8">
