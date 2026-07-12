@@ -20,9 +20,11 @@ export default function RootLayout({
         {/* Header */}
         <header className="sticky top-0 z-50 bg-[#F8F4EE]/95 backdrop-blur-md border-b border-[#E8DDD0]">
           <div className="container mx-auto px-6 py-4 flex justify-between items-center">
+            {/* Logo — Montserrat SemiBold, tracking +100, uppercase */}
             <Link
               href="/"
-              className="text-xl font-light tracking-[0.25em] text-[#1A1A1A] hover:text-[#8B6E4F] transition-colors uppercase"
+              className="logo-bazimart text-[#1A1A1A] hover:text-[#8B6E4F] transition-colors"
+              style={{ fontSize: '1.05rem' }}
             >
               BAZIMART
             </Link>
