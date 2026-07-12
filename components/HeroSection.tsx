@@ -11,7 +11,7 @@ export default function HeroSection() {
           opacity: 0.22,
         }}
       />
-      {/* Gradient overlay — más denso a la izquierda */}
+      {/* Gradient overlay */}
       <div className="absolute inset-0" style={{ background: 'linear-gradient(100deg, #1A1A1A 45%, rgba(26,26,26,0.7) 70%, rgba(26,26,26,0.3) 100%)' }} />
 
       <div className="relative container mx-auto px-6 flex flex-col lg:flex-row items-center" style={{ minHeight: '88vh' }}>
@@ -20,7 +20,7 @@ export default function HeroSection() {
           {/* Eyebrow */}
           <div className="flex items-center gap-3 mb-8">
             <span className="block w-8 h-px bg-[#8B6E4F]"></span>
-            <span className="text-[#8B6E4F] text-xs tracking-[0.35em] uppercase font-medium">Cucina a Induzione</span>
+            <span className="text-[#8B6E4F] text-xs tracking-[0.35em] uppercase font-medium">Piano a Induzione</span>
           </div>
 
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-light text-white leading-[1.15] mb-6 tracking-tight">
@@ -51,14 +51,14 @@ export default function HeroSection() {
             </a>
           </div>
 
-          {/* Trust badges */}
+          {/* Trust badges — terminología corretta dal Documento Maestro */}
           <div className="mt-12 flex items-center gap-6">
             <div className="text-[#6B5744] text-xs tracking-wide">
               <span className="text-white font-medium text-sm">9</span><br />pezzi inclusi
             </div>
             <div className="w-px h-8 bg-[#3A3A3A]"></div>
             <div className="text-[#6B5744] text-xs tracking-wide">
-              <span className="text-white font-medium text-sm">300°C</span><br />resistenza
+              <span className="text-white font-medium text-sm">260°C</span><br />dichiarati
             </div>
             <div className="w-px h-8 bg-[#3A3A3A]"></div>
             <div className="text-[#6B5744] text-xs tracking-wide">
