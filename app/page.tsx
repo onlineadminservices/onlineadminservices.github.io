@@ -3,34 +3,34 @@ import HeroSection from '@/components/HeroSection';
 export default function HomePage() {
 
   const kitPieces = [
-    { label: '5 Tappetini silicone + fibra di vetro', detail: '2× Ø22cm · 1× Ø24cm · 1× Ø26cm · 1 rettangolare 25×35cm' },
+    { label: '5 Tappetini silicone + fibra di vetro', detail: '2\u00d7 \u00d822cm \u00b7 1\u00d7 \u00d824cm \u00b7 1\u00d7 \u00d826cm \u00b7 1 rettangolare 25\u00d735cm' },
     { label: '2 Presine in silicone',                 detail: 'Per spostare pentole calde in sicurezza' },
-    { label: "2 Sottopentola a nido d'ape",           detail: '1 rotondo · 1 quadrato — texture antiscivolo' },
+    { label: "2 Sottopentola a nido d'ape",           detail: '1 rotondo \u00b7 1 quadrato \u2014 texture antiscivolo' },
   ];
 
   const features = [
     {
       img: '/listing-preview/imagenes_finales/04_300c_booster.png',
       title: 'Calore sotto controllo',
-      desc: "Silicone + fibra di vetro con resistenza dichiarata fino a 260°C, secondo le specifiche del materiale. Un set pensato per l'uso quotidiano sul piano a induzione.",
+      desc: "Silicone + fibra di vetro con resistenza dichiarata fino a 260\u00b0C, secondo le specifiche del materiale. Un set pensato per l'uso quotidiano sul piano a induzione.",
     },
     {
       img: '/listing-preview/imagenes_finales/05_antiscivolo.png',
       title: 'Controllo in ogni gesto',
-      desc: 'La superficie antiscivolo favorisce stabilità mentre mescoli, giri o cucini con una mano, sul piano a induzione.',
+      desc: 'La superficie antiscivolo favorisce stabilit\u00e0 mentre mescoli, giri o cucini con una mano, sul piano a induzione.',
     },
     {
-      img: '/listing-preview/imagenes_finales/06_cottura.png',
+      img: '/listing-preview/imagenes_finales/07_manipolazione_tavola.png',
       title: 'Dalla cucina alla tavola',
-      desc: "Tappetini, presine e sottopentola inclusi per accompagnare ogni passaggio — dal piano cottura all'impiattamento.",
+      desc: "Tappetini, presine e sottopentola inclusi per accompagnare ogni passaggio \u2014 dal piano cottura all'impiattamento.",
     },
   ];
 
   const gallery = [
-    { img: '/listing-preview/imagenes_finales/03_prima_dopo.png',           alt: 'Senza protezione / Con BAZIMART' },
-    { img: '/listing-preview/imagenes_finales/07_manipolazione_tavola.png', alt: 'Dalla cucina alla tavola' },
-    { img: '/listing-preview/imagenes_finales/08_pinze_trivet.png',         alt: "Presine e sottopentola a nido d'ape" },
-    { img: '/listing-preview/imagenes_finales/AP_modulo5_checklist.png',    alt: 'Tutto quello che serve — checklist BAZIMART' },
+    { img: '/listing-preview/imagenes_finales/03_prima_dopo.png',           alt: 'Senza protezione / Con BAZIMART',        pos: 'center top' },
+    { img: '/listing-preview/imagenes_finales/07_manipolazione_tavola.png', alt: 'Dalla cucina alla tavola',               pos: 'center' },
+    { img: '/listing-preview/imagenes_finales/08_pinze_trivet.png',         alt: "Presine e sottopentola a nido d'ape",    pos: 'center' },
+    { img: '/listing-preview/imagenes_finales/AP_modulo5_checklist.png',    alt: 'Tutto quello che serve \u2014 BAZIMART', pos: 'center top' },
   ];
 
   return (
@@ -45,7 +45,7 @@ export default function HomePage() {
             <div className="order-2 md:order-1">
               <img
                 src="/listing-preview/imagenes_finales/02_inventario.png"
-                alt="Contenuto del kit BAZIMART — 9 pezzi"
+                alt="Contenuto del kit BAZIMART \u2014 9 pezzi"
                 className="w-full rounded-xl"
                 style={{ border: '1px solid #E8DDD0' }}
               />
@@ -82,12 +82,10 @@ export default function HomePage() {
               </ul>
 
               <a
-                href="https://www.amazon.it/dp/B0GYG3DBHB"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="/listing-preview/"
                 className="inline-flex items-center gap-3 px-7 py-4 bg-[#1A1A1A] text-white font-medium tracking-wide rounded-full hover:bg-[#8B6E4F] transition-all duration-300 text-sm hover:-translate-y-0.5 w-full sm:w-auto justify-center sm:justify-start"
               >
-                Compra su Amazon &mdash; &euro;24,90 &rarr;
+                Compra su Amazon &rarr;
               </a>
             </div>
           </div>
@@ -133,7 +131,7 @@ export default function HomePage() {
       <section className="overflow-hidden">
         <img
           src="/listing-preview/imagenes_finales/AP_modulo4_mercato.png"
-          alt="BAZIMART — Pensato per la cucina di ogni giorno"
+          alt="BAZIMART \u2014 Pensato per la cucina di ogni giorno"
           className="w-full object-cover"
           style={{ maxHeight: '420px', objectPosition: 'center' }}
         />
@@ -157,11 +155,12 @@ export default function HomePage() {
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-3">
             {gallery.map((item, i) => (
-              <div key={i} className="aspect-square rounded-lg md:rounded-xl overflow-hidden bg-[#E8DDD0]">
+              <div key={i} className="rounded-lg md:rounded-xl overflow-hidden bg-[#E8DDD0]" style={{ aspectRatio: '4/3' }}>
                 <img
                   src={item.img}
                   alt={item.alt}
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+                  style={{ objectPosition: item.pos }}
                 />
               </div>
             ))}
@@ -183,32 +182,20 @@ export default function HomePage() {
           >
             Kit BAZIMART &mdash; 9 pezzi
           </h2>
-          <p className="text-[#C8B8A0] text-lg md:text-xl mb-2.5 font-light">Solo &euro;24,90 su Amazon.it</p>
           <p className="text-[#5A4030] text-sm mb-10 md:mb-12 font-light tracking-wide">
             Spedizione Prime &middot; Lavabile in lavastoviglie &middot; Manuale incluso
           </p>
           <a
-            href="https://www.amazon.it/dp/B0GYG3DBHB"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="/listing-preview/"
             className="inline-flex items-center justify-center gap-3 px-8 md:px-10 py-4 md:py-5 bg-white text-[#1A1A1A] font-medium tracking-wide rounded-full hover:bg-[#F8F4EE] transition-all duration-300 text-sm md:text-base shadow-2xl hover:-translate-y-1 hover:shadow-[0_30px_60px_rgba(0,0,0,0.4)] w-full sm:w-auto"
           >
-            Compra su Amazon.it &mdash; &euro;24,90
+            Compra su Amazon.it &rarr;
           </a>
           <p className="mt-6 md:mt-8 text-[#3A2818] text-xs tracking-widest uppercase">
             ASIN: B0GYG3DBHB &middot; Casa e cucina &rsaquo; Utensili da cucina &rsaquo; Sottopentola
           </p>
         </div>
       </section>
-
-      {/* Accesso interno */}
-      <a
-        href="/listing-preview/"
-        title="Anteprima listing Amazon (uso interno)"
-        className="fixed bottom-4 right-4 md:bottom-6 md:right-6 z-50 flex items-center gap-2 bg-gray-900 text-white text-xs font-medium px-3 py-1.5 md:px-4 md:py-2 rounded-full shadow-lg opacity-40 hover:opacity-100 transition-opacity duration-200"
-      >
-        Listing Preview
-      </a>
     </>
   );
 }
