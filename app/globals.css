@@ -10,19 +10,34 @@
     font-family: 'Inter', system-ui, -apple-system, sans-serif;
   }
   body {
-    @apply antialiased;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Text selection — brand colors */
+  ::selection {
+    background-color: #1A1A1A;
+    color: #F8F4EE;
+  }
+
+  /* Scrollbar sottile */
+  ::-webkit-scrollbar {
+    width: 3px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #F8F4EE;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #C8B8A0;
+    border-radius: 2px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #8B6E4F;
   }
 }
 
 @layer components {
   .container {
     @apply max-w-7xl mx-auto;
-  }
-  /* Logo BAZIMART — identidad visual del producto */
-  .logo-bazimart {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
   }
 }
