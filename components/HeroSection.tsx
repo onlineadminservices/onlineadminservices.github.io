@@ -4,7 +4,7 @@ export default function HeroSection() {
   return (
     <section className="relative bg-[#1A1A1A] overflow-hidden" style={{ minHeight: '88vh' }}>
 
-      {/* Sfondo — gradiente radiale sottile, niente immagine con testo fantasma */}
+      {/* Sfondo — gradiente radiale sottile */}
       <div
         className="absolute inset-0"
         style={{ background: 'radial-gradient(ellipse 80% 70% at 20% 60%, #221510 0%, #1A1A1A 65%)' }}
@@ -12,7 +12,7 @@ export default function HeroSection() {
       {/* Gradient overlay destra */}
       <div
         className="absolute inset-0"
-        style={{ background: 'linear-gradient(105deg, #1A1A1A 40%, rgba(26,26,26,0.65) 62%, rgba(26,26,26,0.12) 100%)' }}
+        style={{ background: 'linear-gradient(105deg, #1A1A1A 38%, rgba(26,26,26,0.6) 60%, rgba(26,26,26,0.08) 100%)' }}
       />
 
       <div
@@ -78,19 +78,29 @@ export default function HeroSection() {
           </div>
         </div>
 
-        {/* Immagine destra desktop — mask con transizione netta */}
-        <div className="hidden lg:flex flex-1 items-center justify-end py-16">
-          <img
-            src="/listing-preview/imagenes_finales/01_main.png"
-            alt="Kit BAZIMART — 9 pezzi protezione piano induzione"
-            className="w-auto select-none"
-            style={{
-              maxHeight: '74vh',
-              filter: 'drop-shadow(0 40px 80px rgba(0,0,0,0.95))',
-              WebkitMaskImage: 'radial-gradient(ellipse 88% 84% at 54% 48%, black 62%, transparent 88%)',
-              maskImage: 'radial-gradient(ellipse 88% 84% at 54% 48%, black 62%, transparent 88%)',
-            }}
-          />
+        {/* Immagine destra desktop — lifestyle con sfondo scuro, integrata */}
+        <div className="hidden lg:flex flex-1 items-center justify-end py-12">
+          <div className="relative overflow-hidden rounded-2xl" style={{ height: '72vh', width: '420px' }}>
+            {/* Sfumatura sinistra per fusione con il hero */}
+            <div
+              className="absolute inset-y-0 left-0 w-28 z-10"
+              style={{ background: 'linear-gradient(to right, #1A1A1A, transparent)' }}
+            />
+            {/* Sfumatura in alto e in basso */}
+            <div
+              className="absolute inset-x-0 top-0 h-20 z-10"
+              style={{ background: 'linear-gradient(to bottom, #1A1A1A, transparent)' }}
+            />
+            <div
+              className="absolute inset-x-0 bottom-0 h-20 z-10"
+              style={{ background: 'linear-gradient(to top, #1A1A1A, transparent)' }}
+            />
+            <img
+              src="/listing-preview/imagenes_finales/07_manipolazione_tavola.png"
+              alt="Kit BAZIMART — in uso sulla tavola"
+              className="w-full h-full object-cover"
+            />
+          </div>
         </div>
       </div>
     </section>
