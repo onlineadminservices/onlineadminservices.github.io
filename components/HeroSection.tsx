@@ -42,12 +42,10 @@ export default function HeroSection() {
 
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
             <a
-              href="https://www.amazon.it/dp/B0GYG3DBHB"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="/listing-preview/"
               className="px-7 py-4 bg-white text-[#1A1A1A] font-medium tracking-wide rounded-full hover:bg-[#F8F4EE] transition-all duration-300 shadow-xl text-sm hover:-translate-y-0.5 hover:shadow-2xl text-center"
             >
-              Scopri su Amazon &mdash; &euro;24,90
+              Scopri su Amazon &rarr;
             </a>
             <a
               href="#kit"
@@ -70,8 +68,8 @@ export default function HeroSection() {
             </div>
             <div className="w-px h-7 bg-[#2C2C2C]"></div>
             <div className="text-[#564030] text-xs tracking-wide">
-              <span className="text-white font-medium text-sm block mb-0.5">&euro;24,90</span>
-              su Amazon.it
+              <span className="text-white font-medium text-sm block mb-0.5">Lavastoviglie</span>
+              compatibile
             </div>
           </div>
         </div>
