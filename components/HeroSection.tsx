@@ -78,27 +78,31 @@ export default function HeroSection() {
           </div>
         </div>
 
-        {/* Immagine destra desktop — lifestyle con sfondo scuro, integrata */}
+        {/* Immagine destra desktop — lifestyle con sfumature su tutti i lati */}
         <div className="hidden lg:flex flex-1 items-center justify-end py-12">
-          <div className="relative overflow-hidden rounded-2xl" style={{ height: '72vh', width: '420px' }}>
-            {/* Sfumatura sinistra per fusione con il hero */}
+          <div className="relative overflow-hidden" style={{ height: '72vh', width: '440px', borderRadius: '1.5rem' }}>
+            {/* Sfumature sui 4 lati per fusione perfetta con il hero */}
             <div
-              className="absolute inset-y-0 left-0 w-28 z-10"
-              style={{ background: 'linear-gradient(to right, #1A1A1A, transparent)' }}
-            />
-            {/* Sfumatura in alto e in basso */}
-            <div
-              className="absolute inset-x-0 top-0 h-20 z-10"
-              style={{ background: 'linear-gradient(to bottom, #1A1A1A, transparent)' }}
+              className="absolute inset-y-0 left-0 z-10"
+              style={{ width: '120px', background: 'linear-gradient(to right, #1A1A1A, transparent)' }}
             />
             <div
-              className="absolute inset-x-0 bottom-0 h-20 z-10"
-              style={{ background: 'linear-gradient(to top, #1A1A1A, transparent)' }}
+              className="absolute inset-y-0 right-0 z-10"
+              style={{ width: '80px', background: 'linear-gradient(to left, #1A1A1A, transparent)' }}
+            />
+            <div
+              className="absolute inset-x-0 top-0 z-10"
+              style={{ height: '100px', background: 'linear-gradient(to bottom, #1A1A1A, transparent)' }}
+            />
+            <div
+              className="absolute inset-x-0 bottom-0 z-10"
+              style={{ height: '100px', background: 'linear-gradient(to top, #1A1A1A, transparent)' }}
             />
             <img
               src="/listing-preview/imagenes_finales/07_manipolazione_tavola.png"
-              alt="Kit BAZIMART — in uso sulla tavola"
+              alt="Kit BAZIMART — dalla cucina alla tavola"
               className="w-full h-full object-cover"
+              style={{ filter: 'brightness(0.88)' }}
             />
           </div>
         </div>
