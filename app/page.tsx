@@ -65,11 +65,11 @@ export default function HomePage() {
                 className="font-light text-[#1A1A1A] mb-5 md:mb-6 leading-tight"
                 style={{ fontSize: 'clamp(1.8rem, 5vw, 2.6rem)', letterSpacing: '-0.01em' }}
               >
-                Non accessori.<br />Un sistema pensato<br />per chi cucina davvero.
+                Un sistema pensato<br />per chi cucina,<br />ogni giorno.
               </h2>
               <p className="text-[#7A6550] text-base md:text-lg mb-8 md:mb-10 leading-relaxed font-light">
-                Ogni elemento risponde a un momento preciso &mdash;
-                nessun compromesso, nessun dettaglio lasciato al caso.
+                9 pezzi progettati per lavorare insieme &mdash;
+                dalla protezione del piano all&rsquo;impiattamento.
               </p>
 
               <ul className="space-y-0 mb-10 md:mb-12">
