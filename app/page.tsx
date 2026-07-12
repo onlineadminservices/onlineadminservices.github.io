@@ -5,14 +5,14 @@ export default function HomePage() {
   const kitPieces = [
     { label: '5 Tappetini silicone + fibra di vetro', detail: '2× Ø22cm · 1× Ø24cm · 1× Ø26cm · 1 rettangolare 25×35cm' },
     { label: '2 Presine in silicone',                 detail: 'Per spostare pentole calde in sicurezza' },
-    { label: '2 Sottopentola a nido d'ape',           detail: '1 rotondo · 1 quadrato — texture antiscivolo' },
+    { label: "2 Sottopentola a nido d'ape",           detail: '1 rotondo · 1 quadrato — texture antiscivolo' },
   ];
 
   const features = [
     {
       img: '/listing-preview/imagenes_finales/04_300c_booster.png',
       title: 'Calore sotto controllo',
-      desc: 'Silicone + fibra di vetro con resistenza dichiarata fino a 260°C, secondo le specifiche del materiale. Un set pensato per l'uso quotidiano sul piano a induzione.',
+      desc: "Silicone + fibra di vetro con resistenza dichiarata fino a 260°C, secondo le specifiche del materiale. Un set pensato per l'uso quotidiano sul piano a induzione.",
     },
     {
       img: '/listing-preview/imagenes_finales/05_antiscivolo.png',
@@ -22,14 +22,14 @@ export default function HomePage() {
     {
       img: '/listing-preview/imagenes_finales/06_cottura.png',
       title: 'Dalla cucina alla tavola',
-      desc: 'Tappetini, presine e sottopentola inclusi per accompagnare ogni passaggio — dal piano cottura all'impiattamento.',
+      desc: "Tappetini, presine e sottopentola inclusi per accompagnare ogni passaggio — dal piano cottura all'impiattamento.",
     },
   ];
 
   const gallery = [
     { img: '/listing-preview/imagenes_finales/03_prima_dopo.png',           alt: 'Senza protezione / Con BAZIMART' },
     { img: '/listing-preview/imagenes_finales/07_manipolazione_tavola.png', alt: 'Dalla cucina alla tavola' },
-    { img: '/listing-preview/imagenes_finales/08_pinze_trivet.png',         alt: 'Presine e sottopentola a nido d'ape' },
+    { img: '/listing-preview/imagenes_finales/08_pinze_trivet.png',         alt: "Presine e sottopentola a nido d'ape" },
     { img: '/listing-preview/imagenes_finales/AP_modulo5_checklist.png',    alt: 'Tutto quello che serve — checklist BAZIMART' },
   ];
 
