@@ -2,16 +2,19 @@ import Link from 'next/link';
 
 export default function Footer() {
   return (
-    <footer className="border-t border-gray-100 py-12 mt-20">
+    <footer className="border-t border-[#E8DDD0] py-12 bg-[#F8F4EE]">
       <div className="container mx-auto px-6">
-        <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-          <div className="text-gray-400 text-sm">
-            © {new Date().getFullYear()} BAZIMART. Todos los derechos reservados.
+        <div className="flex flex-col md:flex-row justify-between items-center gap-6">
+          <div>
+            <p className="text-xs tracking-[0.25em] text-[#1A1A1A] uppercase font-light mb-1">BAZIMART</p>
+            <p className="text-[#8B7355] text-xs font-light">
+              © {new Date().getFullYear()} BAZIMART. Tutti i diritti riservati.
+            </p>
           </div>
-          <div className="flex space-x-6 text-sm text-gray-400">
-            <Link href="/legal" className="hover:text-gray-600">Aviso legal</Link>
-            <Link href="/privacy" className="hover:text-gray-600">Privacidad</Link>
-            <Link href="/contact" className="hover:text-gray-600">Contacto</Link>
+          <div className="flex gap-6 text-xs text-[#8B7355]">
+            <Link href="/legal" className="hover:text-[#1A1A1A] transition-colors tracking-wide">Note legali</Link>
+            <Link href="/privacy" className="hover:text-[#1A1A1A] transition-colors tracking-wide">Privacy</Link>
+            <Link href="/contact" className="hover:text-[#1A1A1A] transition-colors tracking-wide">Contatto</Link>
           </div>
         </div>
       </div>
