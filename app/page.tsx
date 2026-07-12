@@ -106,10 +106,7 @@ export default function HomePage() {
                   <img
                     src={feat.img}
                     alt={feat.title}
-                    className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-all duration-500"
-                    style={{ transform: 'scale(1)', transition: 'transform 0.5s ease, opacity 0.5s ease' }}
-                    onMouseEnter={e => (e.currentTarget.style.transform = 'scale(1.05)')}
-                    onMouseLeave={e => (e.currentTarget.style.transform = 'scale(1)')}
+                    className="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500"
                   />
                 </div>
                 <h3 className="text-white text-lg font-medium mb-2 tracking-wide">{feat.title}</h3>
