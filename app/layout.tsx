@@ -37,12 +37,17 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <Link href="/" style={{ ...logoStyle, fontSize: '1.1rem' }} className="hover:text-[#8B6E4F] transition-colors duration-300">
                 BAZIMART
               </Link>
-              <a
-                href="/listing-preview/"
-                className="px-4 py-2 bg-[#1A1A1A] text-white text-xs tracking-wide rounded-full hover:bg-[#8B6E4F] transition-colors duration-300"
-              >
-                Amazon &rarr;
-              </a>
+              <div className="flex items-center gap-4">
+                <Link href="/manual" className="text-xs text-[#8B7355] hover:text-[#1A1A1A] transition-colors duration-300 tracking-wide">
+                  Manuale
+                </Link>
+                <a
+                  href="/listing-preview/"
+                  className="px-4 py-2 bg-[#1A1A1A] text-white text-xs tracking-wide rounded-full hover:bg-[#8B6E4F] transition-colors duration-300"
+                >
+                  Amazon &rarr;
+                </a>
+              </div>
             </div>
 
             {/* Desktop layout \u2014 grid 3 colonne */}
@@ -53,6 +58,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 </Link>
                 <Link href="#caratteristiche" className="text-sm text-[#8B7355] hover:text-[#1A1A1A] transition-colors duration-300 tracking-wide">
                   Caratteristiche
+                </Link>
+                <Link href="/manual" className="text-sm text-[#8B7355] hover:text-[#1A1A1A] transition-colors duration-300 tracking-wide">
+                  Manuale
                 </Link>
               </nav>
               <div className="flex justify-center">
