@@ -7,6 +7,7 @@ const MANUALS = {
   de: { language: 'Deutsch', back: 'Sprache ändern', eyebrow: 'Bedienungsanleitung', title: 'Schutzset für Induktionskochfelder', download: 'PDF herunterladen', pageAlt: 'BAZIMART Anleitung, Seite' },
   fr: { language: 'Français', back: 'Changer de langue', eyebrow: "Mode d'emploi", title: 'Kit de protection pour plaque à induction', download: 'Télécharger le PDF', pageAlt: 'Manuel BAZIMART, page' },
   es: { language: 'Español', back: 'Cambiar idioma', eyebrow: 'Manual de uso', title: 'Kit de protección para placa de inducción', download: 'Descargar PDF', pageAlt: 'Manual BAZIMART, página' },
+  ar: { language: 'العربية', back: 'تغيير اللغة', eyebrow: 'دليل الاستخدام', title: 'طقم حماية موقد الحث', download: 'تنزيل ملف PDF', pageAlt: 'دليل BAZIMART، الصفحة' },
 } as const
 
 type LanguageCode = keyof typeof MANUALS
@@ -28,7 +29,7 @@ export default function LocalizedManualPage({ params }: { params: { lang: string
   if (!manual) notFound()
 
   return (
-    <div className="container mx-auto px-6 py-12 md:py-16 max-w-3xl">
+    <div dir={code === 'ar' ? 'rtl' : 'ltr'} className="container mx-auto px-6 py-12 md:py-16 max-w-3xl">
       <Link href="/manual" className="text-sm text-[#8B7355] hover:text-[#1A1A1A] transition-colors duration-300">
         &larr; {manual.back}
       </Link>
