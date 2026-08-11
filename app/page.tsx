@@ -43,11 +43,6 @@ export default function HomePage() {
           <div className="grid md:grid-cols-2 gap-10 md:gap-16 lg:gap-20 items-center">
 
             <div className="order-2 md:order-1 relative">
-              <div className="absolute top-3 left-3 z-10">
-                <span className="inline-flex items-center bg-[#1A1A1A]/90 text-[#8B6E4F] text-[10px] tracking-[0.3em] uppercase font-medium px-3 py-1.5 rounded-full border border-[#8B6E4F]/25">
-                  Componenti del kit
-                </span>
-              </div>
               <img
                 src="/listing-preview/imagenes_finales/02_inventario.jpg"
                 alt="Sistema BAZIMART — 9 componenti"
@@ -117,10 +112,6 @@ export default function HomePage() {
           <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 md:gap-10">
             {features.map((feat, i) => (
               <div key={i} className="group">
-                <div className="flex items-center gap-2 mb-3 md:mb-4">
-                  <span className="block w-4 h-px bg-[#8B6E4F]"></span>
-                  <span className="text-[#8B6E4F] text-[10px] tracking-[0.3em] uppercase font-medium">{feat.tag}</span>
-                </div>
                 <div className="rounded-2xl overflow-hidden mb-5 md:mb-6 bg-[#252525]" style={{ aspectRatio: '4/3' }}>
                   <img
                     src={feat.img}
@@ -170,12 +161,6 @@ export default function HomePage() {
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                   style={{ objectPosition: item.pos }}
                 />
-                <div
-                  className="absolute bottom-0 left-0 right-0 px-3 py-2.5"
-                  style={{ background: 'linear-gradient(to top, rgba(0,0,0,0.55), transparent)' }}
-                >
-                  <span className="text-white/80 text-[10px] tracking-[0.2em] uppercase font-medium">{item.label}</span>
-                </div>
               </div>
             ))}
           </div>
