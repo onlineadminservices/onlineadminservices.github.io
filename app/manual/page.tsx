@@ -8,10 +8,10 @@ export const metadata: Metadata = {
 
 const LANGUAGES: { code: string; label: string; native: string; available: boolean }[] = [
   { code: 'it', label: 'Italiano', native: 'Italiano', available: true },
-  { code: 'en', label: 'English', native: 'English', available: false },
-  { code: 'de', label: 'Deutsch', native: 'Deutsch', available: false },
-  { code: 'fr', label: 'Français', native: 'Français', available: false },
-  { code: 'es', label: 'Español', native: 'Español', available: false },
+  { code: 'en', label: 'English', native: 'English', available: true },
+  { code: 'de', label: 'Deutsch', native: 'Deutsch', available: true },
+  { code: 'fr', label: 'Français', native: 'Français', available: true },
+  { code: 'es', label: 'Español', native: 'Español', available: true },
 ]
 
 export default function ManualSelectorPage() {
