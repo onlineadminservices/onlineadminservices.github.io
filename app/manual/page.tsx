@@ -12,6 +12,7 @@ const LANGUAGES: { code: string; label: string; native: string; available: boole
   { code: 'de', label: 'Deutsch', native: 'Deutsch', available: true },
   { code: 'fr', label: 'Français', native: 'Français', available: true },
   { code: 'es', label: 'Español', native: 'Español', available: true },
+  { code: 'ar', label: 'Arabic', native: 'العربية', available: false },
 ]
 
 export default function ManualSelectorPage() {
