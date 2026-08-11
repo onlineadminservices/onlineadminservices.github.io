@@ -81,7 +81,7 @@ export default function HeroSection() {
             <div className="absolute inset-x-0 top-0 z-10" style={{ height: '100px', background: 'linear-gradient(to bottom, #1A1A1A, transparent)' }} />
             <div className="absolute inset-x-0 bottom-0 z-10" style={{ height: '100px', background: 'linear-gradient(to top, #1A1A1A, transparent)' }} />
             <img
-              src="/listing-preview/imagenes_finales/07_manipolazione_tavola.png"
+              src="/listing-preview/imagenes_finales/07_manipolazione_tavola.jpg"
               alt="Kit BAZIMART — dalla cucina alla tavola"
               className="w-full h-full object-cover"
               style={{ filter: 'brightness(0.88)' }}

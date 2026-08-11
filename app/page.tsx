@@ -10,26 +10,26 @@ export default function HomePage() {
 
   const features = [
     {
-      img: '/listing-preview/imagenes_finales/04_300c_booster.png',
+      img: '/listing-preview/imagenes_finales/04_300c_booster.jpg',
       tag: '01 — Il calore',
       desc: "Silicone + fibra di vetro con resistenza dichiarata fino a 260°C. Progettato per la cucina quotidiana sul piano a induzione.",
     },
     {
-      img: '/listing-preview/imagenes_finales/05_antiscivolo.png',
+      img: '/listing-preview/imagenes_finales/05_antiscivolo.jpg',
       tag: '02 — Il controllo',
       desc: "La superficie antiscivolo favorisce stabilità mentre mescoli, giri o cucini con una mano. Ogni gesto, sotto controllo.",
     },
     {
-      img: '/listing-preview/imagenes_finales/07_manipolazione_tavola.png',
+      img: '/listing-preview/imagenes_finales/07_manipolazione_tavola.jpg',
       tag: '03 — La tavola',
       desc: "Tappetini, presine e sottopentola inclusi per accompagnare ogni passaggio — dal piano cottura all’impiattamento.",
     },
   ];
 
   const gallery = [
-    { img: '/listing-preview/imagenes_finales/03_prima_dopo.png',    alt: 'Prima e dopo — con e senza BAZIMART',   pos: 'center center', label: 'Prima — Dopo'  },
-    { img: '/listing-preview/imagenes_finales/06_cottura.png',       alt: 'Cottura sul piano a induzione',             pos: 'center',        label: 'In cottura'      },
-    { img: '/listing-preview/imagenes_finales/08_pinze_trivet.png',  alt: "Presine e sottopentola a nido d’ape",  pos: 'center',        label: 'Il dettaglio'    },
+    { img: '/listing-preview/imagenes_finales/03_prima_dopo.jpg',    alt: 'Prima e dopo — con e senza BAZIMART',   pos: 'center center', label: 'Prima — Dopo'  },
+    { img: '/listing-preview/imagenes_finales/06_cottura.jpg',       alt: 'Cottura sul piano a induzione',             pos: 'center',        label: 'In cottura'      },
+    { img: '/listing-preview/imagenes_finales/08_pinze_trivet.jpg',  alt: "Presine e sottopentola a nido d’ape",  pos: 'center',        label: 'Il dettaglio'    },
     { img: '/listing-preview/imagenes_finales/01_main.png',          alt: 'Kit BAZIMART — 9 pezzi',               pos: 'center',        label: 'Il sistema'      },
   ];
 
@@ -49,7 +49,7 @@ export default function HomePage() {
                 </span>
               </div>
               <img
-                src="/listing-preview/imagenes_finales/02_inventario.png"
+                src="/listing-preview/imagenes_finales/02_inventario.jpg"
                 alt="Sistema BAZIMART — 9 componenti"
                 className="w-full rounded-xl"
                 style={{ border: '1px solid #E8DDD0', background: '#F0E8DE' }}
@@ -138,7 +138,7 @@ export default function HomePage() {
       {/* BANNER BRAND */}
       <section className="overflow-hidden">
         <img
-          src="/listing-preview/imagenes_finales/AP_modulo4_mercato.png"
+          src="/listing-preview/imagenes_finales/AP_modulo4_mercato.jpg"
           alt="BAZIMART — Pensato per la cucina di ogni giorno"
           className="w-full object-cover"
           style={{ maxHeight: '420px', objectPosition: 'center' }}
